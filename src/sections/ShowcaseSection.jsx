@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const PROJECTS_DATA = [
   {
     id: 1,
-    title: "Ryde App Interface",
+    title: "Art and Technology - Interactive Art",
     description: "On-Demand Rides Made Simple with a Powerful, User-Friendly App",
     mainImage: "https://placehold.co/800x600/1e293b/white?text=Ryde+Main", // Placeholder
     images: ["https://placehold.co/400x300/1e293b/white?text=Step+1", "https://placehold.co/400x300/1e293b/white?text=Step+2", "https://placehold.co/400x300/1e293b/white?text=Step+3"],

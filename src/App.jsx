@@ -4,6 +4,7 @@ import logoImage from './assets/images/LogoSpaceH.Newbl.png'
 //Pages
 import HomePage from "./Pages/HomePage";
 import WorkPage from "./Pages/WorkPage";
+import AboutPage from "./Pages/AboutPage";
 
 const App = () => (
   
@@ -16,6 +17,7 @@ const App = () => (
     	<Routes>
 			<Route path="/" element={<HomePage/>} />
 			<Route path="/workproject" element={<WorkPage/>} />
+			<Route path="/about" element={<AboutPage/>} />
 		</Routes>
 	</div>
   </BrowserRouter>

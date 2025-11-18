@@ -7,14 +7,14 @@ const navLinks = [
 //     name: "Experience",
 //     link: "#experience",
 //   },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+//   {
+//     name: "Skills",
+//     link: "#skills",
+//   },
+//   {
+//     name: "Testimonials",
+//     link: "#testimonials",
+//   },
 ];
 
 const words = [

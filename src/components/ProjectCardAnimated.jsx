@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProjectCardAnimated = ({ project, cardRef, className }) => {
   // Thêm kiểm tra điều kiện (Guard Clause)
@@ -7,6 +8,7 @@ const ProjectCardAnimated = ({ project, cardRef, className }) => {
       return null;
   }
     
+const navigate = useNavigate();
   // State quản lý trạng thái hover
   const [isHovered, setIsHovered] = useState(false);
   // State quản lý chỉ mục hình ảnh đang hiển thị
@@ -44,6 +46,7 @@ const ProjectCardAnimated = ({ project, cardRef, className }) => {
   return (
     <div 
       ref={cardRef} 
+	  onClick={() => navigate(`/workproject`)}
       className={`relative w-full aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer shadow-xl transition-all duration-500 ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
