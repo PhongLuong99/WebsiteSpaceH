@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import ProjectCardAnimated from "../components/ProjectCardAnimated";
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,11 +89,13 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
 		{/* Tiêu đề chính - Căn trái và sử dụng font chữ lớn hơn */}
+		
         <div className="mb-16">
             <h2 className="text-7xl md:text-9xl font-extrabold text-white uppercase leading-none tracking-tight">
                 <span className="block text-4xl font-light text-gray-400 mb-2">Featured</span>
                 Works
             </h2>
+			
         </div>
 
         {/* Main Layout */}

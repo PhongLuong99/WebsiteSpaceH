@@ -19,11 +19,11 @@ const ProjectModal = ({ project, closeModal }) => {
             onClick={closeModal} // Đóng khi click ra ngoài
         >
             <div 
-                className="bg-white rounded-xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col transform transition-all duration-300 scale-100 opacity-100"
+                className="bg-black rounded-xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col transform transition-all duration-300 scale-100 opacity-100"
                 onClick={e => e.stopPropagation()} // Ngăn sự kiện click lan truyền
             >
                 {/* Header Modal */}
-                <div className="p-4 border-b flex justify-between items-center sticky top-0 bg-white z-10 rounded-t-xl">
+                <div className="p-4 border-b flex justify-between items-center sticky top-0 bg-black z-10 rounded-t-xl">
                     <h2 className="text-2xl font-bold text-gray-900 truncate">{project.title}</h2>
                     <button 
                         onClick={closeModal}

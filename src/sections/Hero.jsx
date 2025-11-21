@@ -53,12 +53,20 @@ const Hero = () => {
 			  Hợp tác chặt chẽ với khách hàng để xác định những 
 			  giải pháp sáng tạo và hiệu quả, phù hợp với nhu cầu và yêu cầu cụ thể từ khách hàng.
             </p>
-
+			
+			<div className="flex flex-wrap md:flex-nowrap gap-4">
             <Button
               text="See My Work"
               className="md:w-80 md:h-16 w-60 h-12"
-              id="counter"
+              targetId="work"
             />
+
+			<Button
+              text="About Us"
+              className="md:w-65 md:h-16 w-60 h-12"
+              targetId="about"
+            />
+			</div>
           </div>
         </header>
 

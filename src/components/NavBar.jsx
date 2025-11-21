@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { navLinks } from "../constants";
+import { navLinks, socialImgs } from "../constants";
 
 const NavBar = () => {
   // track if the user has scrolled down the page
@@ -25,11 +25,12 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
+        {/* LOGO */}
         <a href="#hero" className="logo">
-          
+          {/* Add logo here */}
         </a>
 
-        <nav className="desktop ">
+        {/* <nav className="desktop ">
           <ul>
             {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
@@ -40,7 +41,26 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-        </nav>
+        </nav> */}
+		{/* SOCIAL ICONS */}
+<div className="flex  items-center gap-4">
+  {socialImgs.map((social, index) => (
+    <a
+      key={index}
+      href={social.url ?? "#"}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 md:w-10 md:h-10 flex justify-center items-center rounded-xl bg-black/30 hover:bg-white/20 transition-all duration-300"
+    >
+      <img
+        src={social.imgPath}
+        alt="social icon"
+        className="w-6 h-6 md:w-6 md:h-6 object-contain"
+      />
+    </a>
+  ))}
+</div>
+
 
         <a href="#contact" className="contact-btn group">
           <div className="inner">

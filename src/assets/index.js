@@ -1,5 +1,5 @@
 // Image
-
+import Image1 from './images/-5601.jpeg';
 
 // Video
 import Chungvid1 from './Videos/Chung 3+1.mp4';
@@ -14,4 +14,5 @@ export {
 	SkyEvid1,
 	SkyEvid2,
 	SkyEvid3,
+	Image1,
 };

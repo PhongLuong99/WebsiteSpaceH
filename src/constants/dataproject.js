@@ -5,6 +5,7 @@ import {
 	SkyEvid1,
 	SkyEvid2,
 	SkyEvid3,
+	Image1,
 
  } from "../assets"; 
 
@@ -14,7 +15,8 @@ const projectsData = [
 	category: "Art and Technology - Interactive Art",
     title: "Trang Thương Mại Điện Tử",
     description: "Một nền tảng mua sắm trực tuyến hiện đại với React và Redux.",
-    thumbnail: "https://placehold.co/800x600/1e293b/white?text=Ryde+Main+Project+Image", // Thay bằng URL ảnh thật
+    thumbnail: Image1, // Thay bằng URL ảnh thật
+	videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4", // Ví dụ video MP4
     content: [
       { type: 'text', value: 'Ryde là một ứng dụng di động được thiết kế lại hoàn toàn để cung cấp trải nghiệm đặt xe nhanh chóng và trực quan. Giai đoạn đầu tập trung vào việc đơn giản hóa quy trình thanh toán.' },
       
@@ -44,6 +46,7 @@ const projectsData = [
     title: "Ứng Dụng Quản Lý Công Việc",
     description: "Công cụ quản lý dự án hiệu quả với tính năng kéo thả.",
     thumbnail: "https://via.placeholder.com/300x180?text=Todo+App+Thumbnail",
+	videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4", // Ví dụ video MP4
     content: [
       { type: 'text', value: 'Nền tảng này cho phép quản lý hàng nghìn đầu sách và hồ sơ độc giả một cách dễ dàng. Chúng tôi sử dụng kiến trúc microservices để đảm bảo tính mở rộng.' },
       { type: 'image', value: 'https://placehold.co/1200x500/fef3c7/0f172a?text=Techart+Dashboard+Design' },
@@ -57,6 +60,7 @@ const projectsData = [
     title: "Trang Portfolio Cá Nhân",
     description: "Thiết kế đáp ứng, hiển thị các dự án đã hoàn thành.",
     thumbnail: "https://via.placeholder.com/300x180?text=Portfolio+Thumbnail",
+	videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4", // Ví dụ video MP4
     content: [
       { type: 'text', value: 'YC Directory là nơi các founder tìm kiếm đối tác và đầu tư. Giao diện được tối ưu hóa cho di động, cho phép tìm kiếm nhanh và lọc thông tin theo ngành.' },
       { type: 'video', value: 'https://www.youtube.com/embed/xvFZjo5PgG0' }, // Placeholder YouTube video (Example)
